@@ -2,8 +2,7 @@ const express = require("express");
 const app = express();
 const axios = require("axios");
 
-const Users = require('./users.json')
-const users = Users.users
+const users = require('./users.json').users;
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
